@@ -2,6 +2,9 @@
 
 A web application finding hot issues in Dcard.
 
+Demo:  
+http://jedi.nlplab.cc:8080/
+
 Updates:  
 2019.12.04  Update the list of kanban & tidy up the project.
 
