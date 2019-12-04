@@ -1,6 +1,7 @@
 # Do You Know Card
 
 A web application finding hot issues in Dcard.
+*All the generated wordcloud file will be saved at /wordclouds/ folder.*
 
 Demo:  
 http://jedi.nlplab.cc:8080/
