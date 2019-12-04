@@ -9,6 +9,7 @@ from PIL import Image
 import numpy as np
 from collections import Counter
 import os
+
 #Jieba------------------------------------------------------------
 stopwords = []
 punctuations = []
@@ -71,7 +72,6 @@ def getArticleComment(data):
 def analyse(key):
     textToWrite = ''
     data = httpRead("https://www.dcard.tw/f/" + key)
-    writeFile(data,"./output/dcard.html")#寫到檔案
     articleList = getAllTitles(data)
 
     print(str(len(articleList)) + " 篇文章")
@@ -80,7 +80,7 @@ def analyse(key):
     for article in articleList:
 
         #擷取文章標題的關鍵字
-        title = article.find("h3",{"class":"PostEntry_title_H5o4dj"}).getText()
+        title = article.find("h3",{"class":"Title__Text-v196i6-0 gmfDU"}).getText()
         terms = jieba.posseg.cut(title)
         cloudWordList += list(
             filter(lambda x: x.word not in stopwords and x.word not in punctuations and x.word != '\n' and x.word[0] != "B" and x.flag in ('ns', 'n', 'vn', 'nr', 'nt', 'nz','nrfg') and len(x.word) >= 2, terms))
@@ -118,9 +118,6 @@ def analyse(key):
     for word in cloudWordList:
         wordListForCloud.append(word.word)
         print("<" + word.word +', '+ word.flag +">")
-    # for cloudword in wordListForCloud:
-    #     print("<" + cloudword + ">")
-    writeFile(textToWrite, "./output.txt")
     resultArr = []
 
     # TF-IDF
@@ -145,19 +142,20 @@ def analyse(key):
         print(item[0]+'\t'+ str(item[1]))
     resultArr.append(tups)
 
+    # generate wordcloud
     font = r"./font/msjhbd.ttc"
-    mask = np.array(Image.open(r"./image/circle.png"))
+    mask = np.array(Image.open(r"./image/cloud.jpg"))
     my_wordcloud = WordCloud(background_color="white",
                          mask=mask,
                          stopwords=set(STOPWORDS), 
                          font_path=font,
                          collocations=False,
                          max_words=200,
-                         width=1200,
-                         height=1200,
+                         width=1600,
+                         height=900,
                          margin=2)
     my_wordcloud.generate_from_frequencies(frequencies=Counter(wordListForCloud))
-    my_wordcloud.to_file("./static/wordcloud.png")
-    my_wordcloud.to_file("./static/wordcloud-" + key + ".png")
+    my_wordcloud.to_file("./static/wordcloud.png") #儲存到static資料夾以呈現在網頁上
+    my_wordcloud.to_file("./wordclouds/" + key + ".png") #儲存檔案到wordclouds資料夾
     return resultArr
 

@@ -6,8 +6,8 @@
     function hideImg() {
       document.getElementById("myWordCloud").style.display = 'none';
     }
-    function changeSrc(){
-      document.getElementById("myWordCloud").src="/static/wordcloud.png?" + new Date().getTime()
+    function changeSrc() {
+      document.getElementById("myWordCloud").src = "/static/wordcloud.png?" + new Date().getTime()
     }
     window.onload = changeSrc;
     window.onbeforeunload = hideImg;
@@ -23,13 +23,13 @@
   <!-- jQuery  -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+    </script>
 
   <title>Hello, world!</title>
 </head>
@@ -44,715 +44,359 @@
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/f/">All<span class="sr-only">(current)</span></a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">Categories</a>
           <ul class="dropdown-menu pre-scrollable">
-            <li>
-              <a class="dropdown-item" href="/f/parttime">打工職缺</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/intern">實習職缺</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/smallgoodthings">小事公益</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/makeup">美妝</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/dressup">穿搭</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/buyonline">網路購物</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/relationship">感情</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/mood">心情</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/talk">閒聊</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/girl">女孩</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/marriage">結婚</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/funny">有趣</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/parentchild">親子</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/rainbow">彩虹</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/hairsalon">美髮</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/entertainer">追星</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/house">居家生活</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/handicrafts">手作</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ecolife">無痕生活</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/pet">寵物</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/photography">攝影</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/vehicle">汽機車</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/horoscopes">星座</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/marvel">靈異</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/food">美食</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/travel">旅遊</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/movie">電影</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tvepisode">戲劇綜藝</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/music">音樂</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/game">遊戲</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/acg">動漫</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/boyslove">BL</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/girlslove">百合</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/pokemon">寶可夢</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/sport">運動</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/basketball">籃球</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tennis">網球</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/baseball">棒球</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/soccer">足球</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/fitness">健身</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/sex">西斯</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/sportsevents">大型賽事</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/boy">男孩</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/3c">3C</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/money">理財</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/trending">時事</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/job">工作</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/studyabroad">留學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/course">課程</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/exam">考試</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/language">語言</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/book">書籍</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/literature">詩文</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/disaster">災害回報</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/dcard">Dcard</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/creditcard">信用卡</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/musicevent">音樂活動</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/military">軍旅</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/go_vege">呷菜</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/sex_literature">西斯文學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/indiemusic">獨立音樂</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/softwareengineer">軟體工程師</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/coffee">咖啡</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/savemoney">省錢</a>
-            </li>
+            <li><a class="dropdown-item" href="/f/merryxmas">聖誕CiaoCiao</a></li>
+            <li><a class="dropdown-item" href="/f/youtuber">YouTuber</a></li>
+            <li><a class="dropdown-item" href="/f/announcement">官方公告</a></li>
+            <li><a class="dropdown-item" href="/f/smallgoodthings">小事公益</a></li>
+            <li><a class="dropdown-item" href="/f/freshman">新生季</a></li>
+            <li><a class="dropdown-item" href="/f/makeup">美妝</a></li>
+            <li><a class="dropdown-item" href="/f/manicure">美甲</a></li>
+            <li><a class="dropdown-item" href="/f/facelift">醫美</a></li>
+            <li><a class="dropdown-item" href="/f/fragrance">香氛</a></li>
+            <li><a class="dropdown-item" href="/f/hairsalon">美髮</a></li>
+            <li><a class="dropdown-item" href="/f/orthodontics">牙齒矯正</a></li>
+            <li><a class="dropdown-item" href="/f/contact_lens">隱形眼鏡</a></li>
+            <li><a class="dropdown-item" href="/f/dressup">穿搭</a></li>
+            <li><a class="dropdown-item" href="/f/sneakers">球鞋</a></li>
+            <li><a class="dropdown-item" href="/f/buyonline">網路購物</a></li>
+            <li><a class="dropdown-item" href="/f/boutique">精品</a></li>
+            <li><a class="dropdown-item" href="/f/relationship">感情</a></li>
+            <li><a class="dropdown-item" href="/f/mood">心情</a></li>
+            <li><a class="dropdown-item" href="/f/talk">閒聊</a></li>
+            <li><a class="dropdown-item" href="/f/funny">有趣</a></li>
+            <li><a class="dropdown-item" href="/f/joke">笑話</a></li>
+            <li><a class="dropdown-item" href="/f/meme">梗圖</a></li>
+            <li><a class="dropdown-item" href="/f/girl">女孩</a></li>
+            <li><a class="dropdown-item" href="/f/menstrual">生理用品</a></li>
+            <li><a class="dropdown-item" href="/f/marriage">結婚</a></li>
+            <li><a class="dropdown-item" href="/f/parentchild">親子</a></li>
+            <li><a class="dropdown-item" href="/f/rainbow">彩虹</a></li>
+            <li><a class="dropdown-item" href="/f/trans">跨性別</a></li>
+            <li><a class="dropdown-item" href="/f/otokonoko">偽娘</a></li>
+            <li><a class="dropdown-item" href="/f/lesbian">Les</a></li>
+            <li><a class="dropdown-item" href="/f/entertainer">追星</a></li>
+            <li><a class="dropdown-item" href="/f/bts">BTS</a></li>
+            <li><a class="dropdown-item" href="/f/akb48_group">AKB48 集團</a></li>
+            <li><a class="dropdown-item" href="/f/nogizaka46">乃木坂 46</a></li>
+            <li><a class="dropdown-item" href="/f/korea_star">韓星</a></li>
+            <li><a class="dropdown-item" href="/f/exo">EXO</a></li>
+            <li><a class="dropdown-item" href="/f/mayday">五月天</a></li>
+            <li><a class="dropdown-item" href="/f/mjj">麥可傑克森</a></li>
+            <li><a class="dropdown-item" href="/f/handicrafts">手作</a></li>
+            <li><a class="dropdown-item" href="/f/illustration">插畫</a></li>
+            <li><a class="dropdown-item" href="/f/design">設計</a></li>
+            <li><a class="dropdown-item" href="/f/caligraphy">手寫</a></li>
+            <li><a class="dropdown-item" href="/f/stationery">文具</a></li>
+            <li><a class="dropdown-item" href="/f/toy">玩具</a></li>
+            <li><a class="dropdown-item" href="/f/lego">樂高</a></li>
+            <li><a class="dropdown-item" href="/f/house">居家生活</a></li>
+            <li><a class="dropdown-item" href="/f/architecture">建築</a></li>
+            <li><a class="dropdown-item" href="/f/aromatherapy">芳療</a></li>
+            <li><a class="dropdown-item" href="/f/ecolife">無痕生活</a></li>
+            <li><a class="dropdown-item" href="/f/pet">寵物</a></li>
+            <li><a class="dropdown-item" href="/f/show_cats">曬貓</a></li>
+            <li><a class="dropdown-item" href="/f/photography">攝影</a></li>
+            <li><a class="dropdown-item" href="/f/plant">植物</a></li>
+            <li><a class="dropdown-item" href="/f/vehicle">汽機車</a></li>
+            <li><a class="dropdown-item" href="/f/heavy_motorcycle">重機</a></li>
+            <li><a class="dropdown-item" href="/f/aviation">航空</a></li>
+            <li><a class="dropdown-item" href="/f/railway">鐵道</a></li>
+            <li><a class="dropdown-item" href="/f/transport">交通運輸</a></li>
+            <li><a class="dropdown-item" href="/f/horoscopes">星座</a></li>
+            <li><a class="dropdown-item" href="/f/tarot">塔羅</a></li>
+            <li><a class="dropdown-item" href="/f/marvel">靈異</a></li>
+            <li><a class="dropdown-item" href="/f/food">美食</a></li>
+            <li><a class="dropdown-item" href="/f/cooking">烹飪</a></li>
+            <li><a class="dropdown-item" href="/f/boba">手搖</a></li>
+            <li><a class="dropdown-item" href="/f/alcohol">品酒</a></li>
+            <li><a class="dropdown-item" href="/f/coffee">咖啡</a></li>
+            <li><a class="dropdown-item" href="/f/go_vege">呷菜</a></li>
+            <li><a class="dropdown-item" href="/f/fastfood">速食</a></li>
+            <li><a class="dropdown-item" href="/f/snack">零食</a></li>
+            <li><a class="dropdown-item" href="/f/cvs">超商</a></li>
+            <li><a class="dropdown-item" href="/f/hypermarket">量販店</a></li>
+            <li><a class="dropdown-item" href="/f/travel">旅遊</a></li>
+            <li><a class="dropdown-item" href="/f/movie">電影</a></li>
+            <li><a class="dropdown-item" href="/f/tvepisode">戲劇綜藝</a></li>
+            <li><a class="dropdown-item" href="/f/ea_series">歐美影集</a></li>
+            <li><a class="dropdown-item" href="/f/netflix">Netflix</a></li>
+            <li><a class="dropdown-item" href="/f/marvel_studios">漫威</a></li>
+            <li><a class="dropdown-item" href="/f/jp_drama">日劇</a></li>
+            <li><a class="dropdown-item" href="/f/kr_tvshow">韓綜</a></li>
+            <li><a class="dropdown-item" href="/f/music">音樂</a></li>
+            <li><a class="dropdown-item" href="/f/indiemusic">獨立音樂</a></li>
+            <li><a class="dropdown-item" href="/f/edm">電子音樂</a></li>
+            <li><a class="dropdown-item" href="/f/musicevent">音樂活動</a></li>
+            <li><a class="dropdown-item" href="/f/wind_band">管樂</a></li>
+            <li><a class="dropdown-item" href="/f/hiphop">嘻哈</a></li>
+            <li><a class="dropdown-item" href="/f/vintage">復古</a></li>
+            <li><a class="dropdown-item" href="/f/palmar_drama">布袋戲</a></li>
+            <li><a class="dropdown-item" href="/f/theater">劇場</a></li>
+            <li><a class="dropdown-item" href="/f/game">遊戲</a></li>
+            <li><a class="dropdown-item" href="/f/board_game">桌遊</a></li>
+            <li><a class="dropdown-item" href="/f/hearthstone">爐石戰記</a></li>
+            <li><a class="dropdown-item" href="/f/onmyoji">陰陽師</a></li>
+            <li><a class="dropdown-item" href="/f/minecraft">Minecraft</a></li>
+            <li><a class="dropdown-item" href="/f/lol">英雄聯盟</a></li>
+            <li><a class="dropdown-item" href="/f/acg">動漫</a></li>
+            <li><a class="dropdown-item" href="/f/boyslove">BL</a></li>
+            <li><a class="dropdown-item" href="/f/girlslove">百合</a></li>
+            <li><a class="dropdown-item" href="/f/cosplay">Cosplay</a></li>
+            <li><a class="dropdown-item" href="/f/pokemon">寶可夢</a></li>
+            <li><a class="dropdown-item" href="/f/disney">迪士尼</a></li>
+            <li><a class="dropdown-item" href="/f/conan">柯南</a></li>
+            <li><a class="dropdown-item" href="/f/onepiece">航海王</a></li>
+            <li><a class="dropdown-item" href="/f/kanahei">卡娜赫拉</a></li>
+            <li><a class="dropdown-item" href="/f/shin_chan">蠟筆小新</a></li>
+            <li><a class="dropdown-item" href="/f/sport">運動</a></li>
+            <li><a class="dropdown-item" href="/f/baseball">棒球</a></li>
+            <li><a class="dropdown-item" href="/f/cpbl">中職</a></li>
+            <li><a class="dropdown-item" href="/f/tennis">網球</a></li>
+            <li><a class="dropdown-item" href="/f/soccer">足球</a></li>
+            <li><a class="dropdown-item" href="/f/basketball">籃球</a></li>
+            <li><a class="dropdown-item" href="/f/badminton">羽球</a></li>
+            <li><a class="dropdown-item" href="/f/volleyball">排球</a></li>
+            <li><a class="dropdown-item" href="/f/table_tennis">桌球</a></li>
+            <li><a class="dropdown-item" href="/f/dance">舞蹈</a></li>
+            <li><a class="dropdown-item" href="/f/fitness">健身</a></li>
+            <li><a class="dropdown-item" href="/f/weight_loss">減肥</a></li>
+            <li><a class="dropdown-item" href="/f/free_dive">自由潛水</a></li>
+            <li><a class="dropdown-item" href="/f/cycling">單車</a></li>
+            <li><a class="dropdown-item" href="/f/sportsevents">大型賽事</a></li>
+            <li><a class="dropdown-item" href="/f/disabled">身心障礙</a></li>
+            <li><a class="dropdown-item" href="/f/boy">男孩</a></li>
+            <li><a class="dropdown-item" href="/f/military">軍旅</a></li>
+            <li><a class="dropdown-item" href="/f/3c">3C</a></li>
+            <li><a class="dropdown-item" href="/f/app">App</a></li>
+            <li><a class="dropdown-item" href="/f/smart_home">智慧家庭</a></li>
+            <li><a class="dropdown-item" href="/f/apple">Apple</a></li>
+            <li><a class="dropdown-item" href="/f/av_equipment">視聽設備</a></li>
+            <li><a class="dropdown-item" href="/f/money">理財</a></li>
+            <li><a class="dropdown-item" href="/f/creditcard">信用卡</a></li>
+            <li><a class="dropdown-item" href="/f/savemoney">省錢</a></li>
+            <li><a class="dropdown-item" href="/f/mobile_payment">行動支付</a></li>
+            <li><a class="dropdown-item" href="/f/blockchain">區塊鏈</a></li>
+            <li><a class="dropdown-item" href="/f/financial">金融</a></li>
+            <li><a class="dropdown-item" href="/f/trending">時事</a></li>
+            <li><a class="dropdown-item" href="/f/job">工作</a></li>
+            <li><a class="dropdown-item" href="/f/nursing">護理</a></li>
+            <li><a class="dropdown-item" href="/f/med">醫事人員</a></li>
+            <li><a class="dropdown-item" href="/f/softwareengineer">軟體工程師</a></li>
+            <li><a class="dropdown-item" href="/f/f2e">前端工程師</a></li>
+            <li><a class="dropdown-item" href="/f/maker">創客</a></li>
+            <li><a class="dropdown-item" href="/f/science">科學</a></li>
+            <li><a class="dropdown-item" href="/f/japan_life">日本生活</a></li>
+            <li><a class="dropdown-item" href="/f/parttime">打工職缺</a></li>
+            <li><a class="dropdown-item" href="/f/intern">實習職缺</a></li>
+            <li><a class="dropdown-item" href="/f/studyabroad">留學</a></li>
+            <li><a class="dropdown-item" href="/f/korea_study">韓國留學</a></li>
+            <li><a class="dropdown-item" href="/f/course">課程</a></li>
+            <li><a class="dropdown-item" href="/f/graduate_school">研究所</a></li>
+            <li><a class="dropdown-item" href="/f/exam">考試</a></li>
+            <li><a class="dropdown-item" href="/f/accounting">會計</a></li>
+            <li><a class="dropdown-item" href="/f/gov_employee">公職</a></li>
+            <li><a class="dropdown-item" href="/f/language">語言</a></li>
+            <li><a class="dropdown-item" href="/f/book">書籍</a></li>
+            <li><a class="dropdown-item" href="/f/novel">小說</a></li>
+            <li><a class="dropdown-item" href="/f/literature">詩文</a></li>
+            <li><a class="dropdown-item" href="/f/taichung">台中</a></li>
+            <li><a class="dropdown-item" href="/f/kaohsiung">高雄</a></li>
+            <li><a class="dropdown-item" href="/f/disaster">災害回報</a></li>
+            <li><a class="dropdown-item" href="/f/dcard">建議回饋</a></li>
+            <li><a class="dropdown-item" href="/f/sex">西斯</a></li>
+            <li><a class="dropdown-item" href="/f/sex_literature">西斯文學</a></li>
+            <li><a class="dropdown-item" href="/f/gaysex">男同志西斯</a></li>
+            <li><a class="dropdown-item" href="/f/ero_manga">色情漫畫</a></li>
+            <li><a class="dropdown-item" href="/f/bdsm">BDSM</a></li>
+            <li><a class="dropdown-item" href="/f/kkboxkma">KKBOX 風雲榜</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false">Schools</a>
-          <ul class="dropdown-menu pre-scrollable">
-            <li>
-              <a class="dropdown-item" href="/f/mcu">銘傳大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nthu">清華大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntu">臺灣大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nccu">政治大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nctu">交通大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tku">淡江大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ndhu">東華大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ncku">成功大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntut">北科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/fju">輔仁大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntnu">師範大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nknu">高雄師範大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ncue">彰化師範大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ncu">中央大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/fcu">逢甲大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ncnu">暨南大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/thu">東海大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nkfust">高雄第一科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntust">台科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nchu">中興大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/yzu">元智大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nuu">聯合大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntou">海洋大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nsysu">中山大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntpu">臺北大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cpu">中央警察大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ccu">中正大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/usc">實踐大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ym">陽明大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntua">臺灣藝術大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/shu">世新大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntue">臺北教育大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tnua">臺北藝術大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/utaipei">臺北市立大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/pccu">文化大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/scu">東吳大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ncyu">嘉義大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nuk">高雄大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nutc">中科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntunhs">國北護</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/isu">義守大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cgu">長庚大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tmu">臺北醫學大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cycu">中原大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/csmu">中山醫學大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/wzu">文藻外語大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/kuas">高應大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cgust">長庚科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ncut">勤益科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/niu">宜蘭大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nfu">虎尾科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nhcue">新竹教育大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ttu">大同大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntub">臺北商業大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntcu">臺中教育大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nptu">屏東大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/pu">靜宜大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nkmu">高雄海洋科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cyut">朝陽科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ndu">國防大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/stust">南臺科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nkuht">高雄餐旅大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cmu">中國醫藥大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cjcu">長榮大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/npust">屏科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/mcut">明志科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/asia">亞洲大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/uch">健行科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/stu">樹德科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/au">真理大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cnu">嘉南藥理大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/kmu">高雄醫學大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/must">明新科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nttu">臺東大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tut">台南應用科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nqu">金門大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/dyu">大葉大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nhu">南華大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ltu">嶺東科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/fy">輔英科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cute">中國科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tcust">慈濟科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tcu">慈濟大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/chihlee">致理科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/knu">開南大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/hk">弘光科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nutn">臺南大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/chu">中華大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/takming">德明財經科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/just">景文科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/lhu">龍華科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/yuntech">國立雲林科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/csu">正修科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/feu">遠東科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/wfu">吳鳳科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ctust">中臺科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/npu">國立澎湖科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ksu">崑山科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/twu">環球科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntupes">臺灣體育運動大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/hwai">中華醫事科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ocu">僑光科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/hwu">醒吾科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/hfu">華梵大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/fgu">佛光大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/vnu">萬能科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/oit">亞東技術學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cku">經國管理暨健康學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ctu">建國科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tnu">東南科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nkut">南開科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/sju">聖約翰科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/mdu">明道大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/meiho">美和科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tnnua">臺南藝術大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ukn">康寧大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ydu">育達科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/kyu">高苑科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cust">中華科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ypu">元培醫事科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntsu">國立體育大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tajen">大仁科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tsu">台灣首府大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/hcu">玄奘大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nju">南榮科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ccut">中州科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/hwh">華夏科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/hust">修平科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tust">大華科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tpcu">臺北城市科大</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/mmc">馬偕醫學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/dlit">宏國德霖科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tumt">台北海洋科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nanya">南亞技術學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tcpa">臺灣戲曲學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/lit">黎明技術學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/toko">稻江科技暨管理學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/fit">蘭陽技術學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/dahan">大漢技術學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/apic">亞太創意技術學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/dila">法鼓文理學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ttc">大同技術學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tht">臺灣觀光學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tf">東方設計大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cit">崇右影藝科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/fotech">和春技術學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/kmvs">高美醫護管理專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ctcn">耕莘健康管理專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/knjc">康寧醫護暨管理專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/smc">聖母醫護管理專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/hsc">新生醫護管理專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tzuhui">慈惠醫護管理專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntin">國立臺南護理專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/yuhing">育英醫護管理專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/szmc">樹人醫護管理專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/mhchcm">敏惠醫護管理專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cjc">崇仁醫護管理專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/mkc">馬偕醫護管理專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/jente">仁德醫護管理專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ndmctsgh">國防醫學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/aaroc">中華民國陸軍專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/tpa">臺灣警察專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/nkust">國立高雄科技大學</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ctbc">中信金融管理學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/ntc">國立臺東專科學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cna">中華民國海軍軍官學校</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/afats">空軍航空技術學院</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="/f/cuhk">香港中文大學</a>
-            </li>
+          <ul class="dropdown-menu pre-scrollable">
+            <li><a class="dropdown-item" href="/f/ntu">臺灣大學</a></li>
+            <li><a class="dropdown-item" href="/f/nccu">政治大學</a></li>
+            <li><a class="dropdown-item" href="/f/nctu">交通大學</a></li>
+            <li><a class="dropdown-item" href="/f/tku">淡江大學</a></li>
+            <li><a class="dropdown-item" href="/f/ndhu">東華大學</a></li>
+            <li><a class="dropdown-item" href="/f/ncku">成功大學</a></li>
+            <li><a class="dropdown-item" href="/f/ntut">北科大</a></li>
+            <li><a class="dropdown-item" href="/f/fju">輔仁大學</a></li>
+            <li><a class="dropdown-item" href="/f/ntnu">師範大學</a></li>
+            <li><a class="dropdown-item" href="/f/nknu">高雄師範大學</a></li>
+            <li><a class="dropdown-item" href="/f/ncue">彰化師範大學</a></li>
+            <li><a class="dropdown-item" href="/f/ncu">中央大學</a></li>
+            <li><a class="dropdown-item" href="/f/fcu">逢甲大學</a></li>
+            <li><a class="dropdown-item" href="/f/nthu">清華大學</a></li>
+            <li><a class="dropdown-item" href="/f/ncnu">暨南大學</a></li>
+            <li><a class="dropdown-item" href="/f/thu">東海大學</a></li>
+            <li><a class="dropdown-item" href="/f/nkfust">高雄第一科大</a></li>
+            <li><a class="dropdown-item" href="/f/ntust">台科大</a></li>
+            <li><a class="dropdown-item" href="/f/nchu">中興大學</a></li>
+            <li><a class="dropdown-item" href="/f/yzu">元智大學</a></li>
+            <li><a class="dropdown-item" href="/f/nuu">聯合大學</a></li>
+            <li><a class="dropdown-item" href="/f/ntou">海洋大學</a></li>
+            <li><a class="dropdown-item" href="/f/nsysu">中山大學</a></li>
+            <li><a class="dropdown-item" href="/f/ntpu">臺北大學</a></li>
+            <li><a class="dropdown-item" href="/f/cpu">中央警察大學</a></li>
+            <li><a class="dropdown-item" href="/f/ccu">中正大學</a></li>
+            <li><a class="dropdown-item" href="/f/usc">實踐大學</a></li>
+            <li><a class="dropdown-item" href="/f/ym">陽明大學</a></li>
+            <li><a class="dropdown-item" href="/f/ntua">臺灣藝術大學</a></li>
+            <li><a class="dropdown-item" href="/f/shu">世新大學</a></li>
+            <li><a class="dropdown-item" href="/f/ntue">臺北教育大學</a></li>
+            <li><a class="dropdown-item" href="/f/tnua">臺北藝術大學</a></li>
+            <li><a class="dropdown-item" href="/f/utaipei">臺北市立大學</a></li>
+            <li><a class="dropdown-item" href="/f/pccu">文化大學</a></li>
+            <li><a class="dropdown-item" href="/f/scu">東吳大學</a></li>
+            <li><a class="dropdown-item" href="/f/ncyu">嘉義大學</a></li>
+            <li><a class="dropdown-item" href="/f/nuk">高雄大學</a></li>
+            <li><a class="dropdown-item" href="/f/nutc">中科大</a></li>
+            <li><a class="dropdown-item" href="/f/ntunhs">國北護</a></li>
+            <li><a class="dropdown-item" href="/f/isu">義守大學</a></li>
+            <li><a class="dropdown-item" href="/f/cgu">長庚大學</a></li>
+            <li><a class="dropdown-item" href="/f/tmu">臺北醫學大學</a></li>
+            <li><a class="dropdown-item" href="/f/cycu">中原大學</a></li>
+            <li><a class="dropdown-item" href="/f/csmu">中山醫學大學</a></li>
+            <li><a class="dropdown-item" href="/f/wzu">文藻外語大學</a></li>
+            <li><a class="dropdown-item" href="/f/kuas">高應大</a></li>
+            <li><a class="dropdown-item" href="/f/cgust">長庚科大</a></li>
+            <li><a class="dropdown-item" href="/f/ncut">勤益科大</a></li>
+            <li><a class="dropdown-item" href="/f/mcu">銘傳大學</a></li>
+            <li><a class="dropdown-item" href="/f/niu">宜蘭大學</a></li>
+            <li><a class="dropdown-item" href="/f/nfu">虎尾科大</a></li>
+            <li><a class="dropdown-item" href="/f/nhcue">新竹教育大學</a></li>
+            <li><a class="dropdown-item" href="/f/ttu">大同大學</a></li>
+            <li><a class="dropdown-item" href="/f/ntub">臺北商業大學</a></li>
+            <li><a class="dropdown-item" href="/f/ntcu">臺中教育大學</a></li>
+            <li><a class="dropdown-item" href="/f/nptu">屏東大學</a></li>
+            <li><a class="dropdown-item" href="/f/pu">靜宜大學</a></li>
+            <li><a class="dropdown-item" href="/f/nkmu">高雄海洋科大</a></li>
+            <li><a class="dropdown-item" href="/f/cyut">朝陽科大</a></li>
+            <li><a class="dropdown-item" href="/f/ndu">國防大學</a></li>
+            <li><a class="dropdown-item" href="/f/stust">南臺科大</a></li>
+            <li><a class="dropdown-item" href="/f/nkuht">高雄餐旅大學</a></li>
+            <li><a class="dropdown-item" href="/f/cmu">中國醫藥大學</a></li>
+            <li><a class="dropdown-item" href="/f/cjcu">長榮大學</a></li>
+            <li><a class="dropdown-item" href="/f/npust">屏科大</a></li>
+            <li><a class="dropdown-item" href="/f/mcut">明志科大</a></li>
+            <li><a class="dropdown-item" href="/f/asia">亞洲大學</a></li>
+            <li><a class="dropdown-item" href="/f/uch">健行科大</a></li>
+            <li><a class="dropdown-item" href="/f/stu">樹德科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/au">真理大學</a></li>
+            <li><a class="dropdown-item" href="/f/cnu">嘉南藥理大學</a></li>
+            <li><a class="dropdown-item" href="/f/kmu">高雄醫學大學</a></li>
+            <li><a class="dropdown-item" href="/f/must">明新科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/nttu">臺東大學</a></li>
+            <li><a class="dropdown-item" href="/f/tut">台南應用科大</a></li>
+            <li><a class="dropdown-item" href="/f/nqu">金門大學</a></li>
+            <li><a class="dropdown-item" href="/f/dyu">大葉大學</a></li>
+            <li><a class="dropdown-item" href="/f/nhu">南華大學</a></li>
+            <li><a class="dropdown-item" href="/f/ltu">嶺東科大</a></li>
+            <li><a class="dropdown-item" href="/f/fy">輔英科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/cute">中國科大</a></li>
+            <li><a class="dropdown-item" href="/f/tcust">慈濟科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/tcu">慈濟大學</a></li>
+            <li><a class="dropdown-item" href="/f/chihlee">致理科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/knu">開南大學</a></li>
+            <li><a class="dropdown-item" href="/f/hk">弘光科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/nutn">臺南大學</a></li>
+            <li><a class="dropdown-item" href="/f/chu">中華大學</a></li>
+            <li><a class="dropdown-item" href="/f/takming">德明財經科大</a></li>
+            <li><a class="dropdown-item" href="/f/just">景文科大</a></li>
+            <li><a class="dropdown-item" href="/f/lhu">龍華科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/yuntech">國立雲林科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/csu">正修科大</a></li>
+            <li><a class="dropdown-item" href="/f/feu">遠東科大</a></li>
+            <li><a class="dropdown-item" href="/f/wfu">吳鳳科大</a></li>
+            <li><a class="dropdown-item" href="/f/ctust">中臺科大</a></li>
+            <li><a class="dropdown-item" href="/f/npu">國立澎湖科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/ksu">崑山科大</a></li>
+            <li><a class="dropdown-item" href="/f/ocu">僑光科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/hwu">醒吾科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/twu">環球科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/ntupes">臺灣體育運動大學</a></li>
+            <li><a class="dropdown-item" href="/f/hwai">中華醫事科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/hfu">華梵大學</a></li>
+            <li><a class="dropdown-item" href="/f/fgu">佛光大學</a></li>
+            <li><a class="dropdown-item" href="/f/vnu">萬能科大</a></li>
+            <li><a class="dropdown-item" href="/f/oit">亞東技術學院</a></li>
+            <li><a class="dropdown-item" href="/f/cku">經國管理暨健康學院</a></li>
+            <li><a class="dropdown-item" href="/f/ctu">建國科大</a></li>
+            <li><a class="dropdown-item" href="/f/tnu">東南科大</a></li>
+            <li><a class="dropdown-item" href="/f/nkut">南開科大</a></li>
+            <li><a class="dropdown-item" href="/f/sju">聖約翰科大</a></li>
+            <li><a class="dropdown-item" href="/f/mdu">明道大學</a></li>
+            <li><a class="dropdown-item" href="/f/meiho">美和科大</a></li>
+            <li><a class="dropdown-item" href="/f/tnnua">臺南藝術大學</a></li>
+            <li><a class="dropdown-item" href="/f/ukn">康寧大學</a></li>
+            <li><a class="dropdown-item" href="/f/ydu">育達科大</a></li>
+            <li><a class="dropdown-item" href="/f/kyu">高苑科大</a></li>
+            <li><a class="dropdown-item" href="/f/cust">中華科大</a></li>
+            <li><a class="dropdown-item" href="/f/ypu">元培醫事科大</a></li>
+            <li><a class="dropdown-item" href="/f/ntsu">國立體育大學</a></li>
+            <li><a class="dropdown-item" href="/f/tajen">大仁科大</a></li>
+            <li><a class="dropdown-item" href="/f/tsu">台灣首府大學</a></li>
+            <li><a class="dropdown-item" href="/f/hcu">玄奘大學</a></li>
+            <li><a class="dropdown-item" href="/f/nju">南榮科大</a></li>
+            <li><a class="dropdown-item" href="/f/ccut">中州科大</a></li>
+            <li><a class="dropdown-item" href="/f/hwh">華夏科大</a></li>
+            <li><a class="dropdown-item" href="/f/hust">修平科大</a></li>
+            <li><a class="dropdown-item" href="/f/tust">大華科大</a></li>
+            <li><a class="dropdown-item" href="/f/tpcu">臺北城市科大</a></li>
+            <li><a class="dropdown-item" href="/f/mmc">馬偕醫學院</a></li>
+            <li><a class="dropdown-item" href="/f/dlit">宏國德霖科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/tumt">台北海洋科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/nanya">南亞技術學院</a></li>
+            <li><a class="dropdown-item" href="/f/tcpa">臺灣戲曲學院</a></li>
+            <li><a class="dropdown-item" href="/f/lit">黎明技術學院</a></li>
+            <li><a class="dropdown-item" href="/f/toko">稻江科技暨管理學院</a></li>
+            <li><a class="dropdown-item" href="/f/fit">蘭陽技術學院</a></li>
+            <li><a class="dropdown-item" href="/f/tht">臺灣觀光學院</a></li>
+            <li><a class="dropdown-item" href="/f/dahan">大漢技術學院</a></li>
+            <li><a class="dropdown-item" href="/f/apic">亞太創意技術學院</a></li>
+            <li><a class="dropdown-item" href="/f/tf">東方設計大學</a></li>
+            <li><a class="dropdown-item" href="/f/ttc">大同技術學院</a></li>
+            <li><a class="dropdown-item" href="/f/dila">法鼓文理學院</a></li>
+            <li><a class="dropdown-item" href="/f/fotech">和春技術學院</a></li>
+            <li><a class="dropdown-item" href="/f/cit">崇右影藝科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/knjc">康寧醫護暨管理專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/smc">聖母醫護管理專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/kmvs">高美醫護管理專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/ntin">國立臺南護理專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/szmc">樹人醫護管理專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/ctcn">耕莘健康管理專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/yuhing">育英醫護管理專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/mkc">馬偕醫護管理專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/hsc">新生醫護管理專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/mhchcm">敏惠醫護管理專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/jente">仁德醫護管理專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/cjc">崇仁醫護管理專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/tzuhui">慈惠醫護管理專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/ndmctsgh">國防醫學院</a></li>
+            <li><a class="dropdown-item" href="/f/aaroc">中華民國陸軍專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/tpa">臺灣警察專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/nkust">國立高雄科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/ctbc">中信金融管理學院</a></li>
+            <li><a class="dropdown-item" href="/f/ntc">國立臺東專科學校</a></li>
+            <li><a class="dropdown-item" href="/f/cna">中華民國海軍軍官學校</a></li>
+            <li><a class="dropdown-item" href="/f/afats">空軍航空技術學院</a></li>
+            <li><a class="dropdown-item" href="/f/cuhk">香港中文大學</a></li>
+            <li><a class="dropdown-item" href="/f/hku">香港大學</a></li>
+            <li><a class="dropdown-item" href="/f/hkust">香港科技大學</a></li>
+            <li><a class="dropdown-item" href="/f/hkpu">香港理工大學</a></li>
+            <li><a class="dropdown-item" href="/f/hkbu">香港浸會大學</a></li>
+            <li><a class="dropdown-item" href="/f/cityu">香港城市大學</a></li>
+            <li><a class="dropdown-item" href="/f/lingu">香港嶺南大學</a></li>
+            <li><a class="dropdown-item" href="/f/syu">香港樹仁大學</a></li>
+            <li><a class="dropdown-item" href="/f/hsu">香港恒生大學</a></li>
+            <li><a class="dropdown-item" href="/f/openu">香港公開大學</a></li>
+            <li><a class="dropdown-item" href="/f/eduhk">香港教育大學</a></li>
           </ul>
         </li>
       </ul>
@@ -763,7 +407,8 @@
     <div style="position: relative;" class="row">
       <div class="col-sm" style="margin-top:15px">
         <div class="alert alert-primary" style="text-align:center" role="alert">
-            <img src="{{ url_for('static', filename = 'D.png') }}" style="width: 30px; height: 30px;vertical-align: bottom">TF-IDF
+          <img src="{{ url_for('static', filename = 'D.png') }}"
+            style="width: 30px; height: 30px;vertical-align: bottom">TF-IDF
         </div>
         <ul class="list-group" width="100%">
           <ul class="list-group list-group-horizontal">
@@ -780,7 +425,8 @@
       </div>
       <div style="margin-top:15px" class="col-sm">
         <div class="alert alert-success" style="text-align:center" role="alert">
-            <img src="{{ url_for('static', filename = 'D.png') }}" style="width: 30px; height: 30px;vertical-align: bottom">TextRank
+          <img src="{{ url_for('static', filename = 'D.png') }}"
+            style="width: 30px; height: 30px;vertical-align: bottom">TextRank
         </div>
         <ul class="list-group" width="100%">
           <ul class="list-group list-group-horizontal">
