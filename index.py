@@ -10,7 +10,6 @@ def index():
 @app.route("/f/<key>")
 def kanban(key):
     resultArr = dcard.analyse(key)
-    print(resultArr[2])
     return render_template("index.html",tfidf=resultArr[0],textrank=resultArr[1],imgDisplay='block', imgsrc=resultArr[2])
 
 if __name__ == "__main__":
