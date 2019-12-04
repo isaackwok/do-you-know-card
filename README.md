@@ -33,7 +33,11 @@ Updates:
   ```
   python index.py
   ```
-  
+  3. Open browser and type:
+  ```
+  localhost:8080
+  ```
+  Cheers!
 ## Trouble Shooting
   1. ```urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1049)>```  
   Solution: https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org
