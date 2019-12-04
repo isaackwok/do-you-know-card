@@ -6,10 +6,7 @@
     function hideImg() {
       document.getElementById("myWordCloud").style.display = 'none';
     }
-    function changeSrc() {
-      document.getElementById("myWordCloud").src = "/static/wordcloud.png?" + new Date().getTime()
-    }
-    window.onload = changeSrc;
+    // window.onload = changeSrc;
     window.onbeforeunload = hideImg;
   </script>
   <!-- Required meta tags -->
@@ -443,7 +440,7 @@
       </div>
     </div>
     <img id="myWordCloud" style="width: 100%;display: {{imgDisplay}}"
-      src="{{ url_for('static', filename = 'wordcloud.png') }}">
+      src="{{imgsrc}}">
   </main>
 
 </body>

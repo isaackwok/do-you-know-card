@@ -9,7 +9,8 @@ from PIL import Image
 import numpy as np
 from collections import Counter
 import os
-
+import io
+import base64
 #Jieba------------------------------------------------------------
 stopwords = []
 punctuations = []
@@ -155,7 +156,15 @@ def analyse(key):
                          height=900,
                          margin=2)
     my_wordcloud.generate_from_frequencies(frequencies=Counter(wordListForCloud))
-    my_wordcloud.to_file("./static/wordcloud.png") #儲存到static資料夾以呈現在網頁上
+    # my_wordcloud.to_file("./static/wordcloud.png") #儲存到static資料夾以呈現在網頁上
     my_wordcloud.to_file("./wordclouds/" + key + ".png") #儲存檔案到wordclouds資料夾
+    
+    # convert image to numpy array then send to front-end
+    np_img = my_wordcloud.to_array()
+    img = Image.fromarray(np_img.astype('uint8'))
+    img_object = io.BytesIO()
+    img.save(img_object, 'PNG')
+    img_object.seek(0)
+    resultArr.append("data:image/png;base64," + base64.b64encode(img_object.getvalue()).decode("utf-8"))
     return resultArr
 
