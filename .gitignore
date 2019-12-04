@@ -1,5 +1,4 @@
 __pycache__
 venv
 static/wordcloud.png
-wordclouds/*
 .DS_Store
