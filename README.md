@@ -2,7 +2,7 @@
 
 A web application finding hot issues in Dcard.
 
-Updates:
+Updates:  
 2019.12.04  Update the list of kanban & tidy up the project.
 
 ## Get Started - Build up environment(First Time)
