@@ -11,7 +11,7 @@ Updates:
 
 ## Get Started - Build up environment(First Time)
 
-  1. Clone and get into the root folder(do-you-know-card).
+  1. Clone and get into the root folder(do-you-know-card-master).
   2. Create a virtual environment named "venv".
   ```
   python -m venv venv
