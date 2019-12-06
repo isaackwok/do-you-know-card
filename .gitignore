@@ -2,3 +2,5 @@ __pycache__
 venv
 static/wordcloud.png
 .DS_Store
+.vscode
+image/.DS_Store
