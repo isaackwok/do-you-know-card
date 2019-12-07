@@ -11,7 +11,7 @@ if not os.path.exists('log'):
 logging.basicConfig(
     filename='log/debug.log',
      level=logging.DEBUG,
-     format='[%(asctime)s -%(levelname)s-]%(name)s: %(message)s'
+     format='[%(asctime)s][%(levelname)s][%(name)s]: %(message)s'
     )
 
 @app.route("/")
