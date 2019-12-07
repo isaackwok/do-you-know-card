@@ -4,7 +4,8 @@ from flask import Flask, render_template
 from logging.handlers import RotatingFileHandler
 
 app = Flask(__name__)
-logging.basicConfig(filename='debug.log', level=logging.DEBUG)
+logging.basicConfig(filename='info.log', level=logging.INFO)
+logging.basicConfig(filename='debug.log', level=logging.INFO)
 
 @app.route("/")
 def index():
