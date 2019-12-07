@@ -8,7 +8,11 @@ app = Flask(__name__)
 
 if not os.path.exists('log'):
     os.makedirs('log')
-logging.basicConfig(filename='log/debug.log', level=logging.DEBUG)
+logging.basicConfig(
+    filename='log/debug.log',
+     level=logging.DEBUG,
+     format='%(asctime)s %(levelname)s %(name)s: %(message)s'
+    )
 
 @app.route("/")
 def index():
