@@ -1,7 +1,10 @@
-from flask import Flask, render_template
 import crawler_dcard as dcard
+import logging
+from flask import Flask, render_template
+from logging.handlers import RotatingFileHandler
 
 app = Flask(__name__)
+logging.basicConfig(filename='debug.log', level=logging.DEBUG)
 
 @app.route("/")
 def index():

@@ -4,3 +4,4 @@ static/wordcloud.png
 .DS_Store
 .vscode
 image/.DS_Store
+debug.log
