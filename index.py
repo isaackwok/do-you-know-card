@@ -1,9 +1,13 @@
 import crawler_dcard as dcard
 import logging
+import os
 from flask import Flask, render_template
 from logging.handlers import RotatingFileHandler
 
 app = Flask(__name__)
+
+if not os.path.exists('log'):
+    os.makedirs('log')
 logging.basicConfig(filename='log/info.log', level=logging.INFO)
 logging.basicConfig(filename='log/debug.log', level=logging.INFO)
 
