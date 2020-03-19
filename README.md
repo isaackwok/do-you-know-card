@@ -3,9 +3,6 @@
 A web application finding hot issues in Dcard.  
 ***All the generated wordcloud images will be saved at "wordclouds" folder.***
 
-Demo:  
-http://jedi.nlplab.cc:8080/
-
 Updates:  
 2019.12.04  Update the list of kanban & tidy up the project.
 
