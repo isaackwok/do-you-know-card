@@ -65,7 +65,7 @@ def getArticleText(data):
     try:
         root = soup.BeautifulSoup(data, "html.parser")
         articleText = root.find("div", {
-            "class": "Post_content_NKEl9d"
+            "class": "sc-4ihej7-0 giORMG"
         }).getText()
         return articleText
     except Exception as e:  # avoid exception such as deleted article
@@ -77,7 +77,7 @@ def getArticleComment(data):
     root = soup.BeautifulSoup(data, "html.parser")
     articleCommentList = []
     elementList = root.find_all("div",
-                                {"class": "CommentEntry_content_1ATrw1"})
+                                {"class": "nxot29-0 lmXrkX"})
     for element in elementList:
         articleCommentList.append(element.getText())
     return articleCommentList
