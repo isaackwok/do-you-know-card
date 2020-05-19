@@ -56,7 +56,7 @@ def writeFile(data, path):
 # 抓出所有文章標題
 def getAllTitles(data):
     root = soup.BeautifulSoup(data, "html.parser")
-    allArticles = root.find_all("div", {"class": "PostList_entry_1rq5Lf"})
+    allArticles = root.find_all("article", {"class": "sc-1v1d5rx-0 lmtfq"})
     return allArticles
 
 
@@ -95,8 +95,8 @@ def analyse(key):
     for article in articleList:
 
         # 擷取文章標題的關鍵字
-        title = article.find("h3", {
-            "class": "Title__Text-v196i6-0 gmfDU"
+        title = article.find("h2", {
+            "class": "sc-1v1d5rx-2 kZjhSU"
         }).getText()
         terms = jieba.posseg.cut(title)
         cloudWordList += list(
@@ -110,7 +110,7 @@ def analyse(key):
 
         # 擷取文章內容的關鍵字
         articleSubHref = article.find(
-            "a", {"class": "PostEntry_root_V6g0rd"})['href']
+            "a", {"class": "sc-1v1d5rx-3 kPUUNB"})['href']
         articleHref = "https://www.dcard.tw" + articleSubHref
         articleData = httpRead(articleHref)
         articleText = getArticleText(articleData)
